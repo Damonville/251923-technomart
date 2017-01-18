@@ -1,7 +1,7 @@
 ﻿# Личный проект «Техномарт»
 
 * Студент: [Max Reyman](https://up.htmlacademy.ru/htmlcss/16/user/251923).
-* Наставник: Денис Байдаров.
+* Наставник: Денис Байдаров (https://htmlacademy.ru/profile/4er).
 
 ---
 
