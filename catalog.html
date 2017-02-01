@@ -7,6 +7,7 @@
 	</head>
 	<body>
 		<header class="main-header">
+			<div class="container">
 			<div class="upper-header">
 				<div class="index-logo">
 					<a href="#">
@@ -18,8 +19,8 @@
 						<input type="text" name="search" value="Поиск">
 					</form>
 				</div>
-				<div class="client-bar">
-					<div class=boolmarks>
+				<div class="client-bar clearfix">
+					<div class=bookmarks>
 						<a href="#"> Закладки:0</a>
 					</div>
 					<div class="basket active-basket">
@@ -30,7 +31,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="central-header">
+			<div class="central-header clearfix">
 				<p class="market-description">
 					Интернет-магазин<br>
 					строительных материалов<br>
@@ -73,8 +74,10 @@
 					</li>
 				</ul>
 			</nav>
+			</div>
 		</header>
-		<main class="main-container">
+		<main class="main-container ">
+			<div class="container">
 			<ul class="breadcrumbs">
 				<li>
 					<a href="#">
@@ -92,6 +95,16 @@
 				</li>
 			</ul>
 			<h1 class="main-title">Перфораторы</h1>
+			<div class="sort">
+				<span class="sort-filter">Фильтр:</span>
+				<span>Сортировка:</span>
+				<a href="#">По цене</a>
+				<a class="btn-selected-sort">По типу</a>
+				<a class="btn-selected-sort">По функциональности</a>
+				<a class="btn-selected-sort">По возрастанию</a><!-- значки? -->
+				<a href="#">По убыванию</a>
+			</div>
+			<div class="clearfix">
 			<form class="show-items" action="#" method="post">
 				<div class="item-groups">
 					<div class="range">
@@ -137,16 +150,8 @@
 					<input type="submit" value="Показать" class="btn-show-items">
 				</div>
 			</form>
-			<div class="sort">
-				<span>Сортировка:</span>
-				<a href="#">По цене</a>
-				<a class="btn-selected-sort">По типу</a>
-				<a class="btn-selected-sort">По функциональности</a>
-				<a class="btn-selected-sort">По возрастанию</a><!-- значки? -->
-				<a href="#">По убыванию</a>
-			</div>
-			<section class="item-list">
-				<article class="item-article">
+			<section class="item-list list-article">
+				<article class="item-catalog-article">
 					<div class="hidden-buttons">
 						<a href="#" class="btn-buy-item">  <!--скрытые кнопки-->
 							Купить
@@ -168,7 +173,7 @@
 						15500 р.
 					</div>
 				</article>
-				<article class="item-article">
+				<article class="item-catalog-article">
 					<div class="hidden-buttons">
 						<a href="#" class="btn-buy-item">  <!--скрытые кнопки-->
 							Купить
@@ -190,7 +195,7 @@
 						25500 р.
 					</div>
 				</article>
-				<article class="item-article mark-new">
+				<article class="item-catalog-article">
 					<div class="hidden-buttons show-buttons">
 						<a href="#" class="btn-buy-item">  <!--скрытые кнопки-->
 							Купить
@@ -209,7 +214,7 @@
 						12500 р.
 					</div>
 				</article>
-				<article class="item-article">
+				<article class="item-catalog-article">
 					<div class="hidden-buttons">
 						<a href="#" class="btn-buy-item">  <!--скрытые кнопки-->
 							Купить
@@ -231,7 +236,7 @@
 						15500 р.
 					</div>
 				</article>
-				<article class="item-article mark-new">
+				<article class="item-catalog-article mark-new">
 					<div class="hidden-buttons">
 						<a href="#" class="btn-buy-item">  <!--скрытые кнопки-->
 							Купить
@@ -253,7 +258,7 @@
 						25500 р.
 					</div>
 				</article>
-				<article class="item-article">
+				<article class="item-catalog-article">
 					<div class="hidden-buttons">
 						<a href="#" class="btn-buy-item">  <!--скрытые кнопки-->
 							Купить
@@ -272,7 +277,7 @@
 						12500 р.
 					</div>
 				</article>
-				<article class="item-article mark-new">
+				<article class="item-catalog-article mark-new">
 					<div class="hidden-buttons">
 						<a href="#" class="btn-buy-item">  <!--скрытые кнопки-->
 							Купить
@@ -294,7 +299,7 @@
 						15500 р. 
 					</div>
 				</article>
-				<article class="item-article">
+				<article class="item-catalog-article">
 					<div class="hidden-buttons">
 						<a href="#" class="btn-buy-item">  <!--скрытые кнопки-->
 							Купить
@@ -316,7 +321,7 @@
 						25500 р.
 					</div>
 				</article>
-				<article class="item-article">
+				<article class="item-catalog-article">
 					<div class="hidden-buttons">
 						<a href="#" class="btn-buy-item">  <!--скрытые кнопки-->
 							Купить
@@ -352,14 +357,17 @@
 				ссортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.
 				</p>
 			</div>
-			<section class="pre-footer">
+			</div>
+			<section class="pre-footer clearfix">
+			<div class="logo-block">
 				<a href="#" class="index-logo">
 					«Техномарт»
 				</a>
-				<p>
+				<p class="pre-footer-adress">
 					г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
 					+7(812)555-05-55
 				</p>
+				</div>
 				<nav class="pre-footer-navigation">
 					<ul class="nav-list">
 						<li>
@@ -394,8 +402,9 @@
 					</ul>
 				</nav>
 			</section>
+			</div>
 		</main>
-		<footer class="main-footer">
+		<footer class="main-footer clearfix">
 			<div class="container">
 				<section class="copyright">
 					©2010-2016 Компания «Техномарт»<br>
@@ -410,7 +419,7 @@
 					<p>Обратная связь:</p>
 					<a class="btn" href="#">mail@htmlacademy.ru</a>
 				</section>
-				<section class="copyright">
+				<section class="developer-copyright">
 					<p>Разработано-</p>
 					<a class="btn" href="https://htmlacademy.ru">htmlacademy.ru</a>
 				</section>
