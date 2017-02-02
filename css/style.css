@@ -5,7 +5,8 @@ body {
 	font-weight: normal;
 	font-family: arial;
 	min-width: 1200px;
-	
+	margin: 0px;
+	padding: 0px;
 	}
 
 h1 {
@@ -37,9 +38,10 @@ h2 {
 	padding: 0 5px;
 }				
 .main-header {
-	background:green;
+	background:#f1f5f7;
 	min-height:260px;
-	margin-bottom:60px;
+	padding-bottom:60px;
+	margin-bottom: 60px;
 }
 .upper-header {
 	background:yellow;
@@ -47,14 +49,12 @@ h2 {
   	min-height: 40px;
 }
 .central-header {
-	background:grey;
+	background:#f1f5f7;
 	margin: 0px auto;
 	min-height: 160px;
 }
 .main-navigation{
 	background:yellow; 
-	padding-left: 55px;
-	padding-right: 55px;
 }
 					/* элементы central-header*/
 .market-description {
@@ -206,9 +206,34 @@ article {
 	margin: 0px;
 }
 .service-block {
-	background: yellow;
-	margin-bottom: 80px;
+	padding-top:70px;
+	padding-bottom: 60px; 
+	background: #f1f5f7;
 }
+.service-title {
+	background:purple;
+}
+
+.service-slider{
+	background: purple;
+}
+
+.service-slider-buttons{
+	background:yellow;
+	float: left;
+	width: 240px;
+	margin-top:80px
+}
+.about-delivery{
+	background: pink;
+	width: 275px;
+	float:right;
+	margin-top:80px;
+	margin-left:80px;
+	margin-right:340px; 
+
+}
+
 .about-company {
 	width: 520px;
 	background: yellow;
@@ -262,7 +287,11 @@ section.item-list.list-article{
 .about-block{
 	background: yellow;
 	float:left;
+	padding-bottom:85px;
 } 
+.about-company-all{
+	margin-bottom: 85px;
+}
 
 .show-items {
 	float:left;
@@ -273,6 +302,9 @@ section.item-list.list-article{
 	width:220px;
 	margin-bottom:20px;
 	margin-top: 20px; 
+}
+.about-block-container {
+	background: #f1f5f7;
 }
 
 label {
@@ -285,7 +317,6 @@ label {
 						/* элементы pre-footer*/
 .pre-footer {
 	background: blue;
-	margin-top: 85px;
 }
 .pre-footer-navigation{
 	background: yellow;
