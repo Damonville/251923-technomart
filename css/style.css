@@ -51,11 +51,11 @@ h2 {
 .central-header {
 	background:#f1f5f7;
 	margin: 0px auto;
-	min-height: 160px;
 }
 .main-navigation{
 	background:yellow; 
 }
+
 					/* элементы central-header*/
 .market-description {
 	margin-top: 45px;
