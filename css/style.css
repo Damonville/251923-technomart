@@ -315,7 +315,7 @@ background-position: -10px -388px;
 .container {
 	width:940px;
 	margin: 0 auto;
-	padding: 0 5px;
+	padding: 0 10px;
 }				
 .main-header {
 	background:#f1f5f7;
@@ -443,54 +443,67 @@ background-position: -10px -388px;
 
 	float:right;
 	width: 299px;
-
 }
 .btn-loged {
+	width:100%;
+	max-width:187px; 
 	position: relative;
 	font-size: 21px;
 	font-family: "Cuprum", "Arial", sans-serif;
 	line-height:auto;
-	padding-left:45px;
+	padding-left:46px;
 	padding-bottom:11px ;
-	padding-right:68px ;
+	padding-right:20px ;
 	padding-top:10px ;
 	display:inline-block;
 	background-color: #ffffff;	
 	text-decoration: none;
 	color:black;
-
 }
-.btn-loged::after {		/* изменение состояний кнопки Равшан*/
+.btn-log-out {
+	position: relative;
+	margin: 0;
+	font-size: 0;
+	background-color: #ffffff;
+	display: inline-block;
+	float:right;
+	width:46px;
+	height:45px;
+}
+/* изменение состояний кнопки Равшан*/
+
+.btn-log-out::after {		
 	content: "";
 	position: absolute;
 	top: 15px;
-	right: 9px;
+	right: 8px;
 	background: transparent url("../img/sprite.png") no-repeat;
 	width: 21px;
 	height: 17px;
 	background-position: -10px -2074px;
 }
-.btn-loged:hover::after {
+.btn-log-out:hover::after {
 	content: "";
 	position: absolute;
 	top: 15px;
-	right: 9px;
+	right: 8px;
 	background: transparent url("../img/sprite.png") no-repeat;
 	width: 21px;
 	height: 17px;
 	background-position: -10px -2111px;
 
 }
-.btn-loged:active::after {
+.btn-log-out:active::after {
 	content: "";
 	position: absolute;
 	top: 15px;
-	right: 9px;
+	right: 8px;
 	background: transparent url("../img/sprite.png") no-repeat;
 	width: 21px;
 	height: 17px;
 	background-position: -10px -2074px;    
 }
+
 .btn-loged::before {		/* изменение состояний кнопки Равшан*/
 	content: "";
 	position: absolute;
@@ -522,7 +535,6 @@ background-position: -10px -388px;
 	height: 18px;
 	background-position: -10px -2646px;   
 }
-
 
 .btn-account-login{
 	position: relative;
@@ -755,10 +767,10 @@ background-position: -10px -388px;
 	position: relative;
 	background:#293449;
 	float:left;
-	min-width:220px;
+	min-width:217px;
 	padding-left: 48px;
-	padding-top:12px;
-	padding-bottom:12px;
+	padding-top:13px;
+	padding-bottom:14px;
 	border:none;
 	color:white;
 	font-size: 17px;
@@ -768,7 +780,7 @@ background-position: -10px -388px;
 	background-repeat: no-repeat;
 	width: 17px;
 	height: 17px;
-	background-position: 5px -2352px;
+	background-position: 5px -2351px;
 }
 
 .search input[type="text"]:hover{    
@@ -777,7 +789,7 @@ background-position: -10px -388px;
 	background-color:#212a3a; 
 	width: 17px;
 	height: 17px;
-	background-position: 5px -2390px;
+	background-position: 5px -2388px;
 }
 
 .search input[type="text"]:focus{    
@@ -787,7 +799,7 @@ background-position: -10px -388px;
 	color: #000000; 
 	width: 17px;
 	height: 17px;
-	background-position: 5px -2426px;
+	background-position: 5px -2425px;
 }
 	/* разметка промо блока*/
 .promo-block {
@@ -813,18 +825,6 @@ background-position: -10px -388px;
 	float: right;
 }
 
-.promo-yellow {
-	background: #f6b22d;
-}
-.promo-purple{
-	background: #cc79d1;
-}
-.promo-blue {
-	background: #4aafde;
-}
-.promo-green { 
-	background: #85d179;
-}
 .btn-promo-title {
 	width: 135px;
 	height: 28px;
@@ -877,70 +877,26 @@ background-position: -10px -388px;
 	color: #ffffff;
 	font-family: "Cuprum", "Arial", sans-serif;
 }
-.promo-materials .flag{
-	position:absolute;
-	top:-1px;
-	right:-1px;
-	width:60px;
-	height:60px;
-	text-indent:-1000px;
-	overflow:hidden;
-	z-index:20;
+.materials-picture{
+	background:#f6b22d url("../img/icon-materials.png") no-repeat;
+	background-position: 213px 30px;
 }
-	.promo-materials .flag-new{
-	background:url("../img/new-flag.png") no-repeat 0 0;
+.tool-picture {
+	background:#4aafde url("../img/icon-tool.png") no-repeat;
+	background-position: 196px 32px;
 }
-.materials-picture::before {
-	content: "";
-	position: absolute;
-	top: 30px;
-	right: 42px;
-	background: url("../img/sprite.png") no-repeat;
-	width: 44px;
-	height: 65px;
-	background-position: -10px -2148px;  
+.equipment-picture{
+	background:#cc79d1 url("../img/icon-equipment.png") no-repeat;
+	background-position: 190px 30px;
 }
-.tool-picture::before {
-	content: "";
-	position: absolute;
-	top: 33px;
-	right: 28px;
-	background: url("../img/sprite.png") no-repeat;
-	width: 75px;
-	height: 61px;
-	background-position: -10px -2475px;
+.discount-picture {
+	background:#85d179 url("../img/icon-discount.png") no-repeat;
+	background-position: 193px 25px;
 }
-.equipment-picture::before {
-	content: "";
-	position: absolute;
-	top: 30px;
-	right: 30px;
-	background: url("../img/sprite.png") no-repeat;
-	width: 78px;
-	height: 62px;
-	background-position: -10px -1751px;
+.delivery-picture{
+	background:#f6b22d url("../img/icon-delivery.png") no-repeat;
+	background-position: 190px 28px;
 }
-.discount-picture::before {
-	content: "";
-	position: absolute;
-	top: 27px;
-	right: 43px;
-	background: url("../img/sprite.png") no-repeat;
-	width: 59px;
-	height: 72px;
-	background-position: -10px -1600px;
-}
-.delivery-picture::before {
-	content: "";
-	position: absolute;
-	top: 33px;
-	right: 30px;
-	background: url("../img/sprite.png") no-repeat;
-	width: 78px;
-	height: 63px;
-	background-position: -10px -1517px;
-}
-
 .slider{
 	width:620px;
 	float:left;
@@ -1035,6 +991,7 @@ background-position: -10px -388px;
 	background: #f7f3ec;
 	margin-bottom: 20px; 
 }
+
 .popular h1{
 	padding-left: 25px;
 	display: inline-block;
@@ -1044,6 +1001,9 @@ background-position: -10px -388px;
 	font-size: 30px;
 	line-height: 30px;
 	color: #32425c;
+}
+.popular-title-margin{
+	margin-left: 5px;
 }
 .show-popular{
 	width: 253px;
@@ -1086,19 +1046,19 @@ background-position: -10px -388px;
 	text-align: center;
 	font-family: "PT Sans", "Arial", sans-serif;
 }
-.item-article .flag{
-	position:absolute;
+ 
+.flag-new:before {
+	content:"";
+	position: absolute;
 	top:-1px;
 	right:-1px;
-	width:60px;
-	height:60px;
-	text-indent:-1000px;
-	overflow:hidden;
+	width: 60px;
+	height: 59px;
 	z-index:20;
+	background:url("../img/sprite.png") no-repeat ;
+	background-position: -10px -2754px;
 }
-.item-article .flag-new{
-	background:url("../img/new-flag.png") no-repeat 0 0;
-}
+
 .item-article .hidden-buttons{
 	position:absolute;
 	top:0;
@@ -1135,7 +1095,7 @@ background-position: -10px -388px;
 	border-bottom-color:#63a63e;
 }
 
-	.btn-buy-item::before {
+.btn-buy-item::before {
 	content: "";
 	position: absolute;
 	top:  6px;
@@ -1235,6 +1195,10 @@ background-position: -10px -388px;
 	border:20px solid white;
 	border-left-color:#ee3643;
 }
+.product-name + .sale-price{
+	margin-top: 38px;
+}
+
 .list-article .item-article:nth-child(3n){
 	margin-right:0;
 }
@@ -1252,6 +1216,7 @@ background-position: -10px -388px;
 }
 
 .popular-producers-logo{
+	font-size: 0;
 	margin-bottom:65px;
 }
 .popular-producers-logo a {
@@ -1259,7 +1224,7 @@ background-position: -10px -388px;
 	display: inline-block;
 	vertical-align: top;
 	margin-bottom:20px;
-	margin-right:16px; 
+	margin-right:20px; 
 	background:#ffffff;
 	width: 218px;
 	height: 144px;
@@ -1275,18 +1240,20 @@ background-position: -10px -388px;
 }
 
 .popular-producers-logo a:hover {
-	border: none;
+
 	box-shadow: 0 2px 30px -10px #000000; 
 }
 .popular-producers-logo a:active {
-	border: none;
+
 	box-shadow: 0 2px 20px -10px #000000; 
 }
 .service-block {
-	padding-top:70px;
-	padding-bottom: 85px; 
+	padding-top:70px; 
 	background: #f1f5f7;
 	margin-bottom: 60px;
+}
+.service-block .container {
+	
 }
 .service-title {
 	margin-bottom: 55px;
@@ -1339,17 +1306,41 @@ background-position: -10px -388px;
 .btn-delyvery-slider a:hover {
 	background:#293449;
 }
+
 .about-delivery{
 	width: 275px;
 	float:left;
-	margin-left:82px;
-	margin-right:340px;
-}
-.service-block {
-	background-image:url('../img/delivery-car.png');
+	padding-left:82px;
+	padding-right:340px;
+	background-image:url("../img/delivery-car.png");
+	background-position: 100% 38px;
 	background-repeat:no-repeat;
-	background-position:71% 263px; 
+	padding-bottom: 115px;	
+}
+.about-guarantee {
+	width: 390px;
+	float:left;
+	padding-left:82px;
+	padding-right:225px;
+	background-image:url("../img/guarantee-image.png");
+	background-position: 100% 38px;
+	background-repeat:no-repeat;
+	padding-bottom: 65px;
 
+	display: none;	
+}
+
+.about-credit {
+	width: 390px;
+	float:left;
+	margin-left:82px;
+	padding-right:225px;
+	background-image:url("../img/credit-image.png");
+	background-repeat:no-repeat;
+	background-position:100% 38px; 
+	padding-bottom: 98px;
+
+	display: none;
 }
 .service-title h2 {
 	margin-top:0px;
@@ -1378,14 +1369,29 @@ background-position: -10px -388px;
 	white-space: normal;
 }
 
-.about-guarantee, .about-credit {
-	display: none;
-}
-
 .about-company {
 	width: 520px;
 	float:left;
 }
+
+.about-credit a {
+	width: 195px;
+	height: 28px;
+	padding-top: 10px;
+	margin-right: 25px;
+	margin-top: 25px;
+	text-transform: uppercase;
+	text-decoration: none;
+	float:right;
+	text-align: center;
+	color: #ffffff;
+	font-size: 14px;
+	line-height: 18px;
+	font-family: "Cuprum", "Arial", sans-serif;
+	background: #ee3643;
+	border-radius: 2px;	
+	float: left;
+}	
 
 .adress-map {
 	width:300px;
@@ -1617,7 +1623,6 @@ background-position: -10px -388px;
 	font-family: "PT Sans", "Arial", sans-serif;
 }
 
-
 .item-list.list-article{
 	width:700px;
 	float:right;
@@ -1655,7 +1660,7 @@ background-position: -10px -388px;
 .checkbox-label {
 	position: relative;
 	cursor: pointer;
-	margin-left: 45px;
+	margin-left: 34px;
 	margin-bottom: 20px;
 	line-height: 20px;
 	font-size: 15px;
@@ -1667,7 +1672,7 @@ background-position: -10px -388px;
 	content: "";
 	position:absolute;
 	top:-2px;
-	left: -44px;
+	left: -34px;
 	z-index: 1;
 	background-image: url("../img/sprite.png");
 	background-repeat: no-repeat;
@@ -1689,7 +1694,7 @@ input[type="checkbox"]:checked ~ .checkbox-label::before {
 	content: "";
 	position:absolute;
 	top:-2px;
-	left: -44px;
+	left: -34px;
 	z-index: 1;
 	background-image: url("../img/sprite.png");
 	background-repeat: no-repeat;
@@ -1708,7 +1713,7 @@ input[type="checkbox"]:checked ~ .checkbox-label:hover::before {
 .radio-label {
 	position: relative;
 	cursor: pointer;
-	margin-left: 44px;
+	margin-left: 34px;
 	margin-bottom: 20px;
 	line-height: 20px;
 	font-size: 14px;
@@ -1720,7 +1725,7 @@ input[type="checkbox"]:checked ~ .checkbox-label:hover::before {
 	content: "";
 	position: absolute;
 	top: -2px;
-	left: -44px;
+	left: -33px;
 	border-radius: 50%;
 }
 .radio-label::before {
