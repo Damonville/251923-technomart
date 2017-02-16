@@ -4,9 +4,7 @@ body {
 	color:#000000;
 	font-weight: normal;
 	font-family: "Cuprum","PT Sans", "Arial", sans-serif;
-	min-width: 1200px;
-	margin: 0px;
-	padding: 0px;
+
 }
 
 h1 {
@@ -85,9 +83,9 @@ h2 {
 }
 
 .sprite-credit-image {
-width: 465px;
-height: 285px;
-background-position: -10px -388px;
+	width: 465px;
+	height: 285px;
+	background-position: -10px -388px;
 }
 
 .sprite-delivery-car {
@@ -804,7 +802,7 @@ background-position: -10px -388px;
 	/* разметка промо блока*/
 .promo-block {
 	width:940px;
-	margin-bottom:35px;
+	margin-bottom:33px;
 	margin-top:60px; 
 }
 .promo-materials {
@@ -1223,7 +1221,7 @@ background-position: -10px -388px;
 	position: relative;
 	display: inline-block;
 	vertical-align: top;
-	margin-bottom:20px;
+	margin-bottom:19px;
 	margin-right:20px; 
 	background:#ffffff;
 	width: 218px;
@@ -1248,13 +1246,11 @@ background-position: -10px -388px;
 	box-shadow: 0 2px 20px -10px #000000; 
 }
 .service-block {
-	padding-top:70px; 
+	padding-top:67px; 
 	background: #f1f5f7;
-	margin-bottom: 60px;
+	margin-bottom: 59px;
 }
-.service-block .container {
-	
-}
+
 .service-title {
 	margin-bottom: 55px;
 }
@@ -1457,7 +1453,7 @@ background-position: -10px -388px;
 .about-company-all h2{
 	text-transform: uppercase;
 	color: #000000;
-	margin-bottom: 30px;
+	margin-bottom: 31px;
 }
 .about-company p {
 	font-size: 13px;
@@ -1627,7 +1623,7 @@ background-position: -10px -388px;
 	width:700px;
 	float:right;
 	margin-top: 20px;
-	margin-bottom:47px;
+	margin-bottom:45px;
 }
 .about-block{
 	float:left;
@@ -1776,7 +1772,7 @@ input[type="radio"]:checked ~ .radio-label:hover::before {
 
 .btn-show-items {
 	display: inline-block;
-	margin-top: 58px;
+	margin-top: 60px;
 	padding-top: 12px;
 	padding-bottom:10px;
 	padding-left: 37px;
@@ -1850,7 +1846,7 @@ label {
 }
 .range {
 	width: 220px;
-	margin-bottom:20px;
+	margin-bottom:17px;
 	margin-top:0px;
 	border-bottom: 1px solid #e5e5e5;
 	padding-bottom: 25px;
@@ -1926,14 +1922,14 @@ label {
 	float: right;
 }
 .nav-list{
-	margin-top: 35px;
+	margin-top: 37px;
 	padding: 0;
 	text-align: right;
 	list-style: none;
 	font-family: "Cuprum", "Arial", sans-serif;
 }
 .nav-list li {
-	margin-left: 57px;
+	margin-left: 56px;
 	display: inline-block;
 	vertical-align: top;
 }
@@ -2102,8 +2098,8 @@ label {
 }
 	                            /* модальные окна */
 .modal-content {
-	position: absolute;
-	top:2320px;
+	position: fixed;
+	top:120px;
 	left: 50%;
 	width: 620px;
 	height:430px;
@@ -2249,8 +2245,8 @@ label {
 	background: rgba(0, 0, 0, 0.5);
 }
 .modal-content-catalog {
-	position: absolute;
-	top:420px;
+	position: fixed;
+	top:220px;
 	left: 50%;
 	width: 620px;
 	height:275px;
