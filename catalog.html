@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="ru">
 	<head>
-		<link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700|PT+Sans:400,400i,700&amp;subset=cyrillic" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700%7CPT+Sans:400,400i,700&amp;subset=cyrillic" rel="stylesheet">
 		<link rel="stylesheet" href="css/normalize.css">
-		<link href="css/style.min.css" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet">
 		<meta charset="utf-8">
 		<title>HTML Academy: Техномарт</title>
 	</head>
@@ -12,7 +12,7 @@
 			<div class="upper-header">
 				<div class="container">
 					<div class="index-logo">
-						<a href="#">
+						<a href="index.html">
  							Техномарт
  						</a>
 					</div>
@@ -39,7 +39,7 @@
 			<div class="central-header clearfix">
 				<div class="container">
 					<p class="market-description">
-						Интернет-магазин<br>
+						Интернет-магазин
 						строительных материалов<br>
 						и инструментов для ремонта
 					</p>
@@ -51,7 +51,7 @@
 					</div>
 					<div class="active-account">
 						<a href="#" class="btn-loged btn-account">Равшан Джамшутович</a>
-						<a href="#" class="btn-log-out btn-account">Выйти<a>
+						<a href="#" class="btn-log-out btn-account">Выйти</a>
 						<a  href="#" class="btn-account-active btn-account btn-account-dot">Мои заказы</a>
 						<a href="#" class="btn-account-active btn-account">Личный кабинет</a>
 					</div>
@@ -89,8 +89,8 @@
 			<div class="container">
 				<ul class="breadcrumbs">
 					<li>
-						<a href="#">
-							<img src="img/icon-home.png" alt="На главную">  
+						<a href="index.html">
+							<img width="15" height="12" src="img/icon-home.png" alt="На главную">  
 						</a> 
 					</li>
 					<li>
@@ -118,16 +118,16 @@
 					</div>
 				</div>
 				<div class="clearfix">
-					<form class="show-items" action="#" method="get">
+					<form class="show-items" action="/sort-list.html" method="get">
 						<div class="item-groups">
 							<div class="range">
 								<h2 class="price-title">Цена:</h2>
 								<div class="range-controls">
 									<div class="scale">
-		            					<div class="bar" style=" width: 82%"></div>
-		          					</div>
-		          					<div class="toggle toggle-min"></div>
-		          					<div class="toggle toggle-max"></div>
+										<div class="bar" style=" width: 82%"></div>
+										</div>
+										<div class="toggle toggle-min"></div>
+										<div class="toggle toggle-max"></div>
 								</div>
 								<div class="price-controls">
 									<input type="text" value="0" name="min-price">
@@ -137,52 +137,38 @@
 							</div>
 							<div class="item-producers">
 								<h2 class="select-title">Производители:</h2>
-								<div>
-									<input type="checkbox" id="checkbox-1" name="bosch" checked>
-									<label for="checkbox-1" class="checkbox-label">
-										Bosch
-									</label>
-								</div>
-								<div>
-									<input type="checkbox" id="checkbox-2" name="interskol">
-									<label for="checkbox-2" class="checkbox-label">
-										Интерскол
-									</label>
-								</div>
-								<div>
-									<input type="checkbox" id="checkbox-3"  name="makita" checked>
-									<label for="checkbox-3" class="checkbox-label">
-										Makita
-									</label>
-								</div>
-								<div>
-									<input type="checkbox" id="checkbox-4" name="dewalt">
-									<label for="checkbox-4" class="checkbox-label">
-										Dewalt
-									</label>
-								</div>
-								<div>
-									<input type="checkbox" id="checkbox-5" name="Hitachi" >
-									<label for="checkbox-5" class="checkbox-label">
-										Hitachi
-									</label>
-								</div>
+								<input class="checkbox-input" type="checkbox" id="checkbox-1" name="bosch" checked>
+								<label for="checkbox-1" class="checkbox-label">
+									Bosch
+								</label>
+								<input class="checkbox-input" type="checkbox" id="checkbox-2" name="interskol">
+								<label for="checkbox-2" class="checkbox-label">
+									Интерскол
+								</label>
+								<input class="checkbox-input" type="checkbox" id="checkbox-3"  name="makita" checked>
+								<label for="checkbox-3" class="checkbox-label">
+									Makita
+								</label>
+								<input class="checkbox-input" type="checkbox" id="checkbox-4" name="dewalt">
+								<label for="checkbox-4" class="checkbox-label">
+									Dewalt
+								</label>
+								<input class="checkbox-input" type="checkbox" id="checkbox-5" name="Hitachi" >
+								<label for="checkbox-5" class="checkbox-label">
+									Hitachi
+								</label>
 							</div>
 						</div>
 						<div class="item-groups">
 							<h2 class="select-title">Питание:</h2>
-							<div>
-								<input type="radio" id="radio-1" name="groups-select" value="battery" checked>
-								<label for="radio-1" class="radio-label">
-									Аккумуляторные
-								</label>
-							</div>
-							<div>
-								<input type="radio" id="radio-2" name="groups-select" value="socket">
-								<label for="radio-2" class="radio-label">
-									Сетевые
-								</label>
-							</div>
+							<input class="radio-input" type="radio" id="radio-1" name="groups-select" value="battery" checked>
+							<label for="radio-1" class="radio-label">
+								Аккумуляторные
+							</label>
+							<input class="radio-input" type="radio" id="radio-2" name="groups-select" value="socket">
+							<label for="radio-2" class="radio-label">
+								Сетевые
+							</label>
 						</div>
 						<div>
 							<input type="submit" value="Показать" class="btn-show-items">
@@ -191,7 +177,7 @@
 					<section class="item-list list-article">
 						<article class="item-article">
 							<div class="hidden-buttons">
-								<a href="https://technomart/buy.ru" class="btn-buy-item">  <!--скрытые кнопки-->
+								<a href="/buy.html" class="btn-buy-item">  <!--скрытые кнопки-->
 									Купить
 								</a>
 								<a href="#" class="btn-add-bookmark">
@@ -213,7 +199,7 @@
 						</article>
 						<article class="item-article">
 							<div class="hidden-buttons">
-								<a href="https://technomart/buy.ru" class="btn-buy-item">  <!--скрытые кнопки-->
+								<a href="/buy.html" class="btn-buy-item">  <!--скрытые кнопки-->
 									Купить
 								</a>
 								<a href="#" class="btn-add-bookmark">
@@ -235,7 +221,7 @@
 						</article>
 						<article class="item-article flag-new">
 							<div class="hidden-buttons show-buttons">
-								<a href="https://technomart/buy.ru" class="btn-buy-item">  <!--скрытые кнопки-->
+								<a href="/buy.html" class="btn-buy-item">  <!--скрытые кнопки-->
 									Купить
 								</a>
 								<a href="#" class="btn-add-bookmark">
@@ -254,7 +240,7 @@
 						</article>
 						<article class="item-article">
 							<div class="hidden-buttons">
-								<a href="https://technomart/buy.ru" class="btn-buy-item">  <!--скрытые кнопки-->
+								<a href="/buy.html" class="btn-buy-item">  <!--скрытые кнопки-->
 									Купить
 								</a>
 								<a href="#" class="btn-add-bookmark">
@@ -276,7 +262,7 @@
 						</article>
 						<article class="item-article flag-new">
 							<div class="hidden-buttons">
-								<a href="https://technomart/buy.ru" class="btn-buy-item">  <!--скрытые кнопки-->
+								<a href="/buy.html" class="btn-buy-item">  <!--скрытые кнопки-->
 									Купить
 								</a>
 								<a href="#" class="btn-add-bookmark">
@@ -298,7 +284,7 @@
 						</article>
 						<article class="item-article">
 							<div class="hidden-buttons">
-								<a href="https://technomart/buy.ru" class="btn-buy-item">  <!--скрытые кнопки-->
+								<a href="/buy.html" class="btn-buy-item">  <!--скрытые кнопки-->
 									Купить
 								</a>
 								<a href="#" class="btn-add-bookmark">
@@ -317,7 +303,7 @@
 						</article>
 						<article class="item-article flag-new">
 							<div class="hidden-buttons">
-								<a href="https://technomart/buy.ru" class="btn-buy-item">  <!--скрытые кнопки-->
+								<a href="/buy.html" class="btn-buy-item">  <!--скрытые кнопки-->
 									Купить
 								</a>
 								<a href="#" class="btn-add-bookmark">
@@ -339,7 +325,7 @@
 						</article>
 						<article class="item-article">
 							<div class="hidden-buttons">
-								<a href="https://technomart/buy.ru" class="btn-buy-item">  <!--скрытые кнопки-->
+								<a href="/buy.html" class="btn-buy-item">  <!--скрытые кнопки-->
 									Купить
 								</a>
 								<a href="#" class="btn-add-bookmark">
@@ -361,7 +347,7 @@
 						</article>
 						<article class="item-article">
 							<div class="hidden-buttons">
-								<a href="https://technomart/buy.ru" class="btn-buy-item">  <!--скрытые кнопки-->
+								<a href="/buy.html" class="btn-buy-item">  <!--скрытые кнопки-->
 									Купить
 								</a>
 								<a href="#" class="btn-add-bookmark">
@@ -395,7 +381,7 @@
 						</h2>
 						<p>
 							Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.<br>
-							Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В<br>
+							Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В
 							aссортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.
 						</p>
 					</div>
@@ -404,11 +390,11 @@
 			<section class="pre-footer clearfix">
 				<div class="container">
 					<div class="logo-block">
-						<a href="#">
+						<a href="index.html">
 							Техномарт
 						</a>
 						<p class="pre-footer-adress">
-							г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
+							г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
 							+7 (812) 555-05-55
 						</p>
 					</div>
@@ -451,7 +437,7 @@
 		<footer class="main-footer clearfix">
 			<div class="container">
 				<section class="copyright">
-					<p>© 2010-2017 Компания «Техномарт»<br>
+					<p>© 2010-2017 Компания «Техномарт»
 					Все права защищены</p>
 				</section>
 				<section class="footer-social">
@@ -475,10 +461,10 @@
 				<p>Товар добавлен в корзину!</p>
 			</div>
 			<div class="button-background">
-				<a class="btn-modul-catalog">Оформить заказ</a>
+				<a class="btn-modul-catalog red-button">Оформить заказ</a>
 				<a class="btn-modul-selected">Продолжить покупки</a>
 			</div>
 		</div>
-		<script src="js/catalog.min.js"></script>
+		<script src="js/script.js"></script>
 	</body>
 </html>
