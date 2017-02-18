@@ -53,6 +53,7 @@ if (link) {
 }
 
 var mapOpen = document.querySelector(".js-open-map");
+
 if (mapOpen) {
 
 	var mapPopup = document.querySelector(".modal-content-map");
@@ -78,6 +79,7 @@ if (mapOpen) {
 	});
 }
 var slideopen = document.querySelector(".slider-next");
+
 if (slideopen) {
 
 	var slideclose = document.querySelector(".slider-prev");
@@ -120,6 +122,7 @@ if (slideopen) {
 	});
 }
 var buy = document.querySelectorAll(".btn-buy-item");
+
 if (buy) {
 
 	var contantCatalog = document.querySelector(".modal-content-catalog");
