@@ -6,22 +6,6 @@ body {
 	font-family: "Cuprum","PT Sans", "Arial", sans-serif;
 }
 
-h1 {
-	font-size: 30px;
-	line-height: 30px;
-	color: 32425c;
-	font-weight: normal;
-	font-family: "Cuprum", "Arial", sans-serif;
-}
-
-h2 {
-	font-size: 30px;
-	line-height: 24px;
-	color: 000000;
-	font-weight: normal;
-	font-family: "Cuprum", "Arial", sans-serif;
-}
-
 .sprite {
 	background-image: url(../img/sprite.png);
 	background-repeat: no-repeat;
@@ -304,7 +288,8 @@ h2 {
 	list-style: none;
 	font-size: 0;
 }
-.main-navigation li {  /*выстроили элементы списка в одну строку*/
+
+.main-navigation li {					/*выстроили элементы списка в одну строку*/
 	display: inline-block;
 	font-size: 17px;
 	line-height: auto;
@@ -318,13 +303,13 @@ h2 {
 	background: #1d2739;
 	color: #868c95;
 }
-	              			/* элементы central-header*/
+							/* элементы central-header*/
 .market-description {
-	margin-top: 49px;
+	margin-top: 48px;
 	margin-left: 53px;
-	margin-right: 70px;
+	margin-right: 58px;
 	float: left;
-	width: 197px;
+	width: 210px;
 	min-height: 60px; 
 	color: #ee3643;
 	font-style: italic;
@@ -452,7 +437,7 @@ h2 {
 	background: transparent url("../img/sprite.png") no-repeat;
 	width: 21px;
 	height: 17px;
-	background-position: -10px -877px;    
+	background-position: -10px -877px;
 }
 
 .btn-loged::before {		/* изменение состояний кнопки Равшан*/
@@ -486,7 +471,7 @@ h2 {
 	background: transparent url("../img/sprite.png") no-repeat;
 	width: 20px;
 	height: 18px;
-	background-position: -10px -1283px;  
+	background-position: -10px -1283px;
 }
 
 .btn-account-login {
@@ -535,7 +520,7 @@ h2 {
 	background: transparent url("../img/sprite.png") no-repeat;
 	width: 20px;
 	height: 17px;
-	background-position: -10px -803px;    
+	background-position: -10px -803px;
 }
 
 .btn-account:hover {
@@ -559,7 +544,7 @@ h2 {
 	font-family: "Cuprum", "Arial", sans-serif;
 }
 
-.btn-account-active{
+.btn-account-active {
 	position: relative;
 	margin-top: 3px;
 	margin-left: 17px;
@@ -603,8 +588,8 @@ h2 {
 }
 
 .place-order {
-	padding-top: 11px;
-	padding-bottom: 10px;
+	padding-top: 10px;
+	padding-bottom: 9px;
 	padding-right: 21px;
 	padding-left: 21px;
 	display: block;
@@ -614,8 +599,8 @@ h2 {
 
 .active-basket {
 	position: relative;
-	padding-top: 11px;
-	padding-bottom: 10px;
+	padding-top: 10px;
+	padding-bottom: 9px;
 	padding-right: 26px;
 	padding-left: 49px;
 	background: #ee3643;
@@ -629,14 +614,14 @@ h2 {
 	padding-right: 28px;
 	padding-left: 45px;
 	padding-top: 10px;
-	padding-bottom: 10px;
+	padding-bottom: 9px;
 	font-family: "Cuprum", "Arial", sans-serif;
 }
 
 .basket {
 	position: relative;
-	padding-top: 11px;
-	padding-bottom: 10px;
+	padding-top: 10px;
+	padding-bottom: 9px;
 	padding-right: 31px;
 	padding-left: 49px;
 	display: block;
@@ -660,7 +645,7 @@ h2 {
 	position: absolute;
 	top: 14px;
 	left: 15px;
-	background:  url("../img/sprite.png") no-repeat;
+	background: url("../img/sprite.png") no-repeat;
 	width: 17px;
 	height: 16px;
 	background-position: -10px -87px;
@@ -754,8 +739,8 @@ h2 {
 	float: left;
 	min-width: 217px;
 	padding-left: 48px;
-	padding-top: 13px;
-	padding-bottom: 14px;
+	padding-top: 12px;
+	padding-bottom: 13px;
 	border: none;
 	color: white;
 	font-size: 17px;
@@ -767,7 +752,7 @@ h2 {
 	background-position: 5px -1069px;
 }
 
-.search input[type="text"]:hover {    
+.search input[type="text"]:hover {
 	background-image: url("../img/sprite.png");
 	background-repeat: no-repeat;
 	background-color: #212a3a; 
@@ -776,7 +761,7 @@ h2 {
 	background-position: 5px -1106px;
 }
 
-.search input[type="text"]:focus {    
+.search input[type="text"]:focus {
 	background-image: url("../img/sprite.png");
 	background-repeat: no-repeat;
 	background-color: #ffffff;
@@ -802,7 +787,7 @@ h2 {
 }
 
 .promo-materials:nth-child(1) {
-	margin: 0px;
+	margin-left: 0px;
 }
 
 .promo-materials:nth-child(4) {
@@ -820,6 +805,10 @@ h2 {
 	text-transform: uppercase;
 	text-decoration: none;
 	text-align: center;
+	float: left;
+	margin-left: 25px;
+	margin-right: 20px; 
+	margin-top:12px;
 	color: #ffffff;
 	font-size: 14px;
 	line-height: 18px;
@@ -834,6 +823,10 @@ h2 {
 	padding-top: 10px;
 	text-transform: uppercase;
 	text-decoration: none;
+	float: left;
+	margin-left: 23px;
+	margin-right: 45px; 
+	margin-top:12px;
 	text-align: center;
 	color: #ffffff;
 	font-size: 14px;
@@ -852,7 +845,10 @@ h2 {
 }
 
 .promo-title {
+	float: left;
 	font-weight: bold;
+	margin-top: 19px;
+	margin-left: 23px;
 	font-size: 24px;
 	line-height: 30px;
 	color: #ffffff;
@@ -879,18 +875,18 @@ h2 {
 	background-position: 193px 25px;
 }
 
-.delivery-picture{
+.delivery-picture {
 	background: #f6b22d url("../img/icon-delivery.png") no-repeat;
 	background-position: 190px 28px;
 }
 
-.slider{
+.slider {
 	width: 620px;
 	float: left;
 	position: relative;
 }
 
-.slider-content{
+.slider-content {
 	margin: 0px;
 }
 
@@ -998,6 +994,8 @@ h2 {
 	font-size: 30px;
 	line-height: 30px;
 	color: #32425c;
+	font-family: "Cuprum", "Arial", sans-serif;
+	font-weight: normal;
 }
 
 .popular-title-margin {
@@ -1034,7 +1032,7 @@ h2 {
 	display: block;
 	z-index: 5;
 }
-	                              /* товары*/
+									/* товары*/
 .item-article {
 	position: relative;
 	display: inline-block;
@@ -1088,7 +1086,7 @@ h2 {
 	font-family: "Cuprum", "Arial", sans-serif;
 	line-height: 18px;
 	text-decoration: none;
-	text-transform: uppercase;    
+	text-transform: uppercase;
 	border-radius: 3px;
 }
 
@@ -1101,7 +1099,7 @@ h2 {
 .btn-buy-item::before {
 	content: "";
 	position: absolute;
-	top:  6px;
+	top: 6px;
 	left: 8px;
 	background: transparent url("../img/sprite.png") no-repeat;
 	width: 17px;
@@ -1170,7 +1168,7 @@ h2 {
 	min-height: 40px;
 	padding: 0 25px;
 	margin-top: 10px;
-	margin-bottom: 10px;    
+	margin-bottom: 10px;
 }
 
 .item-article .full-price {
@@ -1287,12 +1285,12 @@ h2 {
 	width: 240px;
 }
 
-.service-slider-ul{
+.service-slider-ul {
 	padding: 0px;
 	list-style: none;
 }
 
-.service-slider-ul  {
+.service-slider-ul {
 	position: relative;
 }
 
@@ -1301,9 +1299,9 @@ h2 {
 	position: absolute;
 	top: -50px;
 	right: 0px; 
-	background: transparent  url(../img/shadow-for-slider.png) no-repeat;
+	background: transparent url(../img/shadow-for-slider.png) no-repeat;
 	width: 10px;
-	height: 272px;	   
+	height: 272px; 
 }
 
 .service-slider-ul a {
@@ -1324,7 +1322,7 @@ h2 {
 	background: #32425c;
 }
 
-.active-delyvery-slider a{
+.active-delyvery-slider a {
 	color: #32425c;
 	background: #ffffff; 
 	font-weight: bold;
@@ -1377,6 +1375,8 @@ h2 {
 	font-size: 30px;
 	color: #000000;
 	text-transform: uppercase;
+	font-family: "Cuprum", "Arial", sans-serif;
+	font-weight: normal;
 }
 
 .service-title p {
@@ -1390,6 +1390,8 @@ h2 {
 	text-transform: uppercase;
 	font-size: 36px;
 	color: #32425c;
+	font-family: "Cuprum", "Arial", sans-serif;
+	font-weight: normal;
 }
 
 .service-slider p {
@@ -1492,10 +1494,13 @@ h2 {
 	border-radius: 2px;
 }
 
-.about-company-all h2{
+.about-company-all h2 {
 	text-transform: uppercase;
 	color: #000000;
 	margin-bottom: 30px;
+	font-family: "Cuprum", "Arial", sans-serif;
+	font-weight: normal;
+	font-size: 30px;
 }
 
 .about-company p {
@@ -1540,11 +1545,11 @@ h2 {
 	font-size: 13px;
 	line-height: 18px;
 	position: relative;
-	text-decoration: none;  
+	text-decoration: none;
 	color: #000000;
 }
 
-.breadcrumbs a::after {   
+.breadcrumbs a::after { 
 	content: "";
 	position: absolute;
 	top: 2px;
@@ -1560,9 +1565,12 @@ h2 {
 	color: #32425c;
 	text-transform: uppercase;
 	padding-left: 30px;
-	padding-top: 30px;
-	padding-bottom: 30px; 
+	padding-top: 32px;
+	padding-bottom: 32px; 
 	margin-top: 0px;
+	font-weight: normal;
+	font-family: "Cuprum", "Arial", sans-serif;
+	font-size: 30px;
 }
 
 .sort {
@@ -1691,7 +1699,10 @@ h2 {
 
 .about-block h2 {
 	text-transform: uppercase;
-	margin-bottom: 0px; 
+	margin-bottom: 0px;
+	font-size: 30px;
+	font-weight: normal;
+	font-family: "Cuprum", "Arial", sans-serif; 
 }
 
 .about-block p {
@@ -1908,7 +1919,7 @@ h2 {
 	color:#000000;
 }
 
-ul .selected-page-number {
+.pages .selected-page-number {
 	background-color: #ee3643; 
 }
 
@@ -2219,7 +2230,7 @@ ul .selected-page-number {
 	margin-bottom: 15px;
 	text-transform: uppercase;
 }
-	                            /* модальные окна */
+									/* модальные окна */
 .modal-content {
 	position: fixed;
 	top: 120px;
@@ -2293,7 +2304,7 @@ ul .selected-page-number {
 	color: #999999;
 	background-color: #ffffff;
 	border: 2px solid #d7dcde;
-	border-radius: 2px;  
+	border-radius: 2px;
 }
 
 .client-name-div {
@@ -2330,7 +2341,7 @@ ul .selected-page-number {
 	color: #000000;
 }
 
-.btn-modul  {
+.btn-modul {
 	width: 460px;
 	height: 48px;
 	padding-top: 5px;
@@ -2438,7 +2449,7 @@ ul .selected-page-number {
 	color: #000000;
 }
 
-.btn-modul-catalog  {
+.btn-modul-catalog {
 	width: 220px;
 	height: 28px;
 	padding-top: 10px;
@@ -2475,7 +2486,7 @@ ul .selected-page-number {
 	background: #ffffff;
 	border-radius: 2px;
 	cursor: pointer;
-}  
+}
 
 .btn-modul-catalog::before {
 	content: "";
@@ -2509,13 +2520,13 @@ ul .selected-page-number {
 }
 
 @keyframes bounce {
-	0%   {
+	0% {
 	transform: translateX(-2000px);
 	}
-	70%  {
+	70% {
 	transform: translateX(30px);
 	}
-	90%  {
+	90% {
 	transform: translateX(-10px);
 	}
 	100% {
