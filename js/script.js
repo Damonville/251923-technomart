@@ -1,6 +1,7 @@
 var link = document.querySelector(".btn-lost");
 
 if (link) {
+
 	var popup = document.querySelector(".modal-content");
 
 	var close = popup.querySelector(".modal-content-close");

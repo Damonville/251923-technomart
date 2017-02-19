@@ -3,7 +3,8 @@ body {
 	line-height: 24px;
 	color: #000000;
 	font-weight: normal;
-	font-family: "Cuprum","PT Sans", "Arial", sans-serif;
+	font-family: "Cuprum", "PT Sans", "Arial", sans-serif;
+	min-width: 960px;
 }
 
 .sprite {
@@ -241,7 +242,7 @@ body {
 }
 
 .container {
-	width: 940px;
+	max-width: 940px;
 	margin: 0 auto;
 	padding: 0 10px;
 }
@@ -272,8 +273,8 @@ body {
 
 .main-navigation a {
 	display: block;			/*что бы увеличить активную область ссылок сделали их блочными и добавили отступы*/
-	padding-top: 17px;
-	padding-bottom: 14px;
+	padding-top: 20px;
+	padding-bottom: 18px;
 	padding-left: 33px;
 	padding-right: 28px;
 	color: #ffffff;
@@ -292,7 +293,7 @@ body {
 .main-navigation li {					/*выстроили элементы списка в одну строку*/
 	display: inline-block;
 	font-size: 17px;
-	line-height: auto;
+	line-height: 17px;
 	vertical-align: top;
 }
 
@@ -301,7 +302,7 @@ body {
 }
 .main-navigation a:active {
 	background: #1d2739;
-	color: #868c95;
+	color: rgba( 255, 255, 255, 0.5);
 }
 							/* элементы central-header*/
 .market-description {
@@ -328,17 +329,15 @@ body {
 	position: relative;
 	padding-left: 72px;
 	padding-right: 15px;
-	padding-bottom: 11px;
-	padding-top: 11px;
+	padding-bottom: 10px;
+	padding-top: 10px;
 	border-top: 2px solid white;
 	border-bottom: 2px solid white; 
 	border-left: 3px solid white;
 	border-right: 3px solid white; 
 	color: #e9292a;
-	font-size: 20px;
-	line-height: 18px;
-	font-weight: 700;
-	font-family: "Cuprum", "Arial", sans-serif;	
+	font-size: 21px;
+	line-height: 21px;	
 }
 
 .phone-number::before {
@@ -379,13 +378,13 @@ body {
 	width: 100%;
 	max-width: 187px; 
 	position: relative;
+	font-family: "Cuprum", "Arial" sans-serif;
 	font-size: 21px;
-	font-family: "Cuprum", "Arial", sans-serif;
-	line-height: auto;
+	line-height: 21px;
 	padding-left: 46px;
-	padding-bottom: 11px;
+	padding-bottom: 12px;
 	padding-right: 20px;
-	padding-top: 10px;
+	padding-top: 12px;
 	display: inline-block;
 	vertical-align: middle;
 	background-color: #ffffff;	
@@ -460,7 +459,6 @@ body {
 	width: 20px;
 	height: 18px;
 	background-position: -10px -1321px;
-
 }
 
 .btn-loged:active::before {
@@ -477,17 +475,16 @@ body {
 .btn-account-login {
 	position: relative;
 	font-size: 21px;
-	line-height: auto;
+	line-height: 21px;
 	padding-left: 47px;
-	padding-bottom: 11px;
+	padding-bottom: 12px;
 	padding-right: 26px;
-	padding-top: 11px;
+	padding-top: 12px;
 	display: inline-block;
 	vertical-align: middle;
 	background-color: #ffffff;	
 	text-decoration: none;
 	color: black;
-	font-family: "Cuprum", "Arial", sans-serif;
 }
 
 .btn-account-login::before {
@@ -523,43 +520,46 @@ body {
 	background-position: -10px -803px;
 }
 
+.btn-account {
+	font-family: "Cuprum", "Arial", sans-serif; /*для ie*/
+}
+
 .btn-account:hover {
 	color: #ee3643;
 }
 
 .btn-account:active {
-	color: #b2b2b2;
+	color: rgba( 0, 0, 0, 0.3);
 }
 
 .btn-account-regist {
-	padding: 11px 24px;
+	padding: 12px 24px;
 	font-size: 21px;
-	line-height: auto;
+	line-height: 21px;
 	margin-left: 6px;
 	background-color: #ffffff;
 	display: inline-block;
 	vertical-align: middle;
 	text-decoration: none;
 	color: black;
-	font-family: "Cuprum", "Arial", sans-serif;
 }
 
 .btn-account-active {
 	position: relative;
-	margin-top: 3px;
+	margin-top: 4px;
 	margin-left: 17px;
 	margin-right: 12px;
 	display: inline-block;
 	vertical-align: middle;
 	color: #32425c;
 	font-size: 16px;
-	font-family: "Cuprum", "Arial", sans-serif;
+	line-height: 18px;
 }
 
 .btn-account-dot::before {
 	content: "";
 	position: absolute;
-	top: 11px;
+	top: 9px;
 	left: 89px;
 	background: #32425c;
 	border-radius: 10px;
@@ -578,34 +578,33 @@ body {
 	padding: 0;
 	font-size: 0;
 	list-style: none;
+	font-family: "Cuprum", "Arial", sans-serif;
 }
 
 .client-bar-list li {
 	display: inline-block;
 	font-size: 17px;
-	line-height: auto;
+	line-height: 18px;
 	vertical-align: top;
 }
 
 .place-order {
-	padding-top: 10px;
-	padding-bottom: 9px;
+	padding-top: 12px;
+	padding-bottom: 12px;
 	padding-right: 21px;
 	padding-left: 21px;
 	display: block;
 	background: #63a63e;
-	font-family: "Cuprum", "Arial", sans-serif;
 }
 
 .active-basket {
 	position: relative;
-	padding-top: 10px;
-	padding-bottom: 9px;
+	padding-top: 12px;
+	padding-bottom: 12px;
 	padding-right: 26px;
 	padding-left: 49px;
 	background: #ee3643;
 	display: block;
-	font-family: "Cuprum", "Arial", sans-serif;	
 }
 
 .bookmarks {
@@ -613,19 +612,17 @@ body {
 	display: block;	
 	padding-right: 28px;
 	padding-left: 45px;
-	padding-top: 10px;
-	padding-bottom: 9px;
-	font-family: "Cuprum", "Arial", sans-serif;
+	padding-top: 12px;
+	padding-bottom: 12px;
 }
 
 .basket {
 	position: relative;
-	padding-top: 10px;
-	padding-bottom: 9px;
+	padding-top: 12px;
+	padding-bottom: 12px;
 	padding-right: 31px;
 	padding-left: 49px;
 	display: block;
-	font-family: "Cuprum", "Arial", sans-serif;	
 }
 
 .active-basket::before {
@@ -636,7 +633,7 @@ body {
 	background: url("../img/sprite.png") no-repeat;
 	width: 17px;
 	height: 16px;
-	background-position: -10px -87px;
+	background-position: -10px -88px;
 	opacity: 0.3;
 }
 
@@ -709,10 +706,8 @@ body {
 }
 .index-logo a {
 	display: block;			
-	font-size: 24px;
-	line-height: 24px;
-	padding-top: 9px ;
-	padding-bottom: 9px ;
+	padding-top: 12px ;
+	padding-bottom: 4px ;
 	padding-left: 55px;
 	padding-right: 54px;
 	color: #ffffff;
@@ -740,16 +735,32 @@ body {
 	min-width: 217px;
 	padding-left: 48px;
 	padding-top: 12px;
-	padding-bottom: 13px;
+	padding-bottom: 12px;
 	border: none;
-	color: white;
 	font-size: 17px;
+	line-height: 18px;
 	font-family: "Cuprum", "Arial", sans-serif;
 	background-image: url("../img/sprite.png");
 	background-repeat: no-repeat;
 	width: 17px;
 	height: 17px;
 	background-position: 5px -1069px;
+}
+
+.search input[type="text"]::-webkit-input-placeholder {
+	color: white;
+}
+
+.search input[type="text"]::-moz-placeholder {
+	color: white;
+}
+
+.search input[type="text"]:focus::-webkit-input-placeholder {
+	color: #000000;
+}
+
+.search input[type="text"]:focus::-moz-placeholder {
+	color: #000000;
 }
 
 .search input[type="text"]:hover {
@@ -765,7 +776,6 @@ body {
 	background-image: url("../img/sprite.png");
 	background-repeat: no-repeat;
 	background-color: #ffffff;
-	color: #000000; 
 	width: 17px;
 	height: 17px;
 	background-position: 5px -1143px;
@@ -852,7 +862,6 @@ body {
 	font-size: 24px;
 	line-height: 30px;
 	color: #ffffff;
-	font-family: "Cuprum", "Arial", sans-serif;
 }
 
 .materials-picture {
@@ -914,6 +923,28 @@ body {
 	background: #ca2c37;
 }
 
+.slider-buttons {
+	position: absolute;
+	bottom: 30px;
+	left: 47%;
+}
+
+.slider-buttons i {
+	display: inline-block;
+	width: 6px;
+	height: 6px;
+	margin: 0 3px;
+	background: #ffffff;
+	border: 2px solid white;
+	vertical-align: top;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+.slider-buttons .active-slider-button {
+	background: #ee3643;
+}
+
 .red-button:active {
 	background: #ba2732;
 }
@@ -957,18 +988,18 @@ body {
 }
 
 .slider-info {
-	top: 30px;
+	top: 25px;
 	left: 25px;
 	position: absolute;
 }
 
 .slider-info h2 {
 	font-size: 36px;
+	line-height: 36px;
 	font-weight: bold;
 	color: #ffffff;
 	text-transform: uppercase;
 	margin: 0;
-	margin-bottom: 8px;
 }
 
 .slider-info span {
@@ -994,7 +1025,6 @@ body {
 	font-size: 30px;
 	line-height: 30px;
 	color: #32425c;
-	font-family: "Cuprum", "Arial", sans-serif;
 	font-weight: normal;
 }
 
@@ -1047,7 +1077,7 @@ body {
 	font-family: "PT Sans", "Arial", sans-serif;
 }
  
-.flag-new:before {
+.flag-new::before {
 	content: "";
 	position: absolute;
 	top: -1px;
@@ -1146,7 +1176,7 @@ body {
 }
 
 .item-article:hover {
-	box-shadow: 0 2px 30px -10px #000000;
+	box-shadow: 0 8px 40px -10px #000000;
 }
 
 .item-article .hidden-buttons {
@@ -1191,11 +1221,12 @@ body {
 	width: 80px;
 	margin: 8px auto;
 	margin-bottom: 20px;
-	padding: 10px 30px;
+	padding: 11px 30px;
 	color: white;
 	background: #ee3643;
 	border-radius: 3px;
 	font-size: 17px;
+	line-height: 18px;
 	text-transform: uppercase;
 	cursor: pointer;
 }
@@ -1263,17 +1294,17 @@ body {
 }
 
 .popular-producers-logo a:hover {
-	box-shadow: 0 2px 30px -10px #000000; 
+	box-shadow: 0 8px 40px -10px #000000; 
 }
 
 .popular-producers-logo a:active {
-	box-shadow: 0 2px 20px -10px #000000; 
+	box-shadow: 0 5px 25px -10px #000000; 
 }
 
 .service-block {
 	padding-top: 67px; 
 	background: #f1f5f7;
-	margin-bottom: 59px;
+	margin-bottom: 56px;
 }
 
 .service-title {
@@ -1294,7 +1325,7 @@ body {
 	position: relative;
 }
 
-.service-slider-ul:before {
+.service-slider-ul::before {
 	content: "";
 	position: absolute;
 	top: -50px;
@@ -1370,12 +1401,12 @@ body {
 }
 
 .service-title h2 {
-	margin-top: 0px;
-	margin-bottom: 30px;
+	margin-top: 0;
+	margin-bottom: 25px;
 	font-size: 30px;
+	line-height: 30px;
 	color: #000000;
 	text-transform: uppercase;
-	font-family: "Cuprum", "Arial", sans-serif;
 	font-weight: normal;
 }
 
@@ -1386,11 +1417,12 @@ body {
 }
 
 .service-slider h2 {
-	margin-top: 18px;
+	margin-top: 12px;
+	margin-bottom: 25px;
 	text-transform: uppercase;
 	font-size: 36px;
+	line-height: 36px;
 	color: #32425c;
-	font-family: "Cuprum", "Arial", sans-serif;
 	font-weight: normal;
 }
 
@@ -1497,10 +1529,10 @@ body {
 .about-company-all h2 {
 	text-transform: uppercase;
 	color: #000000;
-	margin-bottom: 30px;
-	font-family: "Cuprum", "Arial", sans-serif;
+	margin-bottom: 25px;
 	font-weight: normal;
 	font-size: 30px;
+	line-height: 30px;
 }
 
 .about-company p {
@@ -1565,12 +1597,12 @@ body {
 	color: #32425c;
 	text-transform: uppercase;
 	padding-left: 30px;
-	padding-top: 32px;
-	padding-bottom: 32px; 
+	padding-top: 30px;
+	padding-bottom: 30px; 
 	margin-top: 0px;
 	font-weight: normal;
-	font-family: "Cuprum", "Arial", sans-serif;
 	font-size: 30px;
+	line-height: 30px;
 }
 
 .sort {
@@ -1605,6 +1637,7 @@ body {
 	cursor: pointer;
 	color: rgba(0,0,0, 0.3);
 	border-bottom: 1px dotted red;
+	text-decoration: none;
 }
 
 .btn-select-sort-active {
@@ -1613,9 +1646,14 @@ body {
 	color: #ee3643;
 }
 
-.btn-select-sort:hover, .btn-select-sort-active:hover {
+.btn-select-sort:hover {
 	color: #000000;
 	border-bottom: 1px solid red;
+}
+
+.btn-select-sort:active {
+	color: #ee3643;
+	border: none;
 }
 
 .on-type {
@@ -1650,18 +1688,6 @@ body {
 	background-position: -10px -576px;
 }
 
-.arrow-up:hover {
-	display: inline-block;
-	margin: 0 9px;
-	font-size: 0;
-	vertical-align: middle;
-	text-decoration: none;
-	background: transparent url("../img/sprite.png") no-repeat center;
-	width: 11px;
-	height: 10px;
-	background-position: -10px -1253px;
-}
-
 .arrow-down:hover {
 	display: inline-block;
 	margin: 0 6px;
@@ -1674,6 +1700,18 @@ body {
 	background-position: -10px -606px;
 }
 
+.arrow-down:active {
+	display: inline-block;
+	margin: 0 6px;
+	font-size: 0;
+	vertical-align: middle;
+	text-decoration: none;
+	width: 11px;
+	height: 10px;
+	background: transparent url("../img/sprite.png") no-repeat center;
+	background-position: -9px -547px;
+}
+
 .sort-btn-div span {
 	margin-left: 19px;
 	margin-right: 135px;
@@ -1681,6 +1719,7 @@ body {
 
 .pages {
 	font-size: 13px;
+	line-height: 18px;
 	font-family: "PT Sans", "Arial", sans-serif;
 }
 
@@ -1693,7 +1732,7 @@ body {
 
 .about-block {
 	float: left;
-	margin-top: 42px;
+	margin-top: 40px;
 	padding-bottom: 55px;
 }
 
@@ -1701,15 +1740,15 @@ body {
 	text-transform: uppercase;
 	margin-bottom: 0px;
 	font-size: 30px;
+	line-height: 30px;
 	font-weight: normal;
-	font-family: "Cuprum", "Arial", sans-serif; 
 }
 
 .about-block p {
 	font-family: "PT sans", "Arial", sans-serif;
 	font-size: 13px;
 	line-height: 24px;
-	margin-top: 30px;
+	margin-top: 25px;
 } 
 
 .about-company-all{
@@ -1888,7 +1927,6 @@ body {
 	padding: 0px;
 	min-width: 100px;
 	margin-top:32px;
-	font-size:14px;
 	list-style: none;
 }
 
@@ -2019,7 +2057,9 @@ body {
 .range h2 {
 	font-family: "PT Sans", "Arial", sans-serif;
 	font-size: 17px;
+	line-height: 30px;
 	font-weight: bold;
+	margin-bottom: 14px;
 }
 													/* элементы pre-footer*/
 .pre-footer {
@@ -2047,6 +2087,7 @@ body {
 .nav-list a {
 	text-decoration: none;
 	font-size: 18px;
+	line-height: 24px;
 	color: #f1f5f7;
 }
 
@@ -2066,6 +2107,7 @@ body {
 
 .colored-nav-list a {
 	font-size: 18px;
+	line-height: 24px;
 	text-decoration: none;
 	color: #ffd180;
 }
@@ -2085,10 +2127,8 @@ body {
 
 .logo-block a {
 	display: block;			
-	font-size: 30px;
-	line-height: 30px;
-	padding-top: 16px ;
-	padding-bottom: 16px ;
+	padding-top: 20px ;
+	padding-bottom: 12px ;
 	padding-left: 40px;
 	padding-right: 45px;
 	color: #ffffff;
@@ -2112,7 +2152,7 @@ body {
 .pre-footer-adress {
 	margin-top: 33px;
 	margin-bottom: 50px;
-	width: 335px;
+	width: 340px;
 	color: #ffffff;
 	font-size: 18px;
 	line-height: 24px;
@@ -2184,7 +2224,7 @@ body {
 	margin-top: 33px;
 	margin-bottom: 35px;
 	width: 140px;
-	margin-right: 50px; 
+	margin-right: 40px; 
 	float: left;
 	font-family: "Cuprum", "Arial", sans-serif;
 
@@ -2193,30 +2233,30 @@ body {
 .feedback span {
 	color: #ffffff;
 	font-size: 16px;
-	font-family: "Cuprum", "Arial", sans-serif;
-	margin-bottom: -5px;
+	line-height: 18px;
+	margin-bottom: -3px;
 	display: block;
 }
 
 .developer-copyright {
-	width: 95px;
+	width: 110px;
 	margin-top: 33px;
 	margin-bottom: 35px;
 	float: right;
-	margin-right: 15px; 
-	font-family: "Cuprum", "Arial", sans-serif;
 }
 
 .developer-copyright span {
 	color: #ffffff;
 	font-size: 16px;
-	margin-bottom: -5px;
+	line-height: 18px;
+	margin-bottom: -3px;
 	display: block;	
 }
 
 .btn {
 	text-decoration: none;
 	font-size: 16px;
+	line-height: 18px;
 	color: #ffd180;
 }
 
@@ -2338,6 +2378,7 @@ body {
 	font-family: "Cuprum", "Arial", sans-serif;
 	margin: 0px;
 	font-size: 18px;
+	line-height: 18px;
 	color: #000000;
 }
 
@@ -2446,6 +2487,7 @@ body {
 	margin-bottom: 75px;
 	padding-left: 175px;
 	font-size: 30px;
+	line-height: 30px; 
 	color: #000000;
 }
 
@@ -2519,9 +2561,24 @@ body {
 	animation: bounce 0.5s;
 }
 
+-webkit-@keyframes bounce {
+	0% {
+	-webkit-transform: translateX(-2000px);	
+	}
+	70% {
+	-webkit-transform: translateX(30px);
+	}
+	90% {
+	-webkit-transform: translateX(-10px);
+	}
+	100% {
+	-webkit-transform: translateX(0px);
+	}
+}
+
 @keyframes bounce {
 	0% {
-	transform: translateX(-2000px);
+	transform: translateX(-2000px);	
 	}
 	70% {
 	transform: translateX(30px);
@@ -2530,22 +2587,39 @@ body {
 	transform: translateX(-10px);
 	}
 	100% {
-	transform: translateX(0);
+	transform: translateX(0px);
 	}
 }
+
 .modal-error {
 	animation: shake 0.5s;
 }
 
+-webkit-@keyframes shake {
+	0%, 100% {
+	-webkit-transform: translateX(0px);
+	}
+	10%, 30%, 50%, 70%, 90% {
+	-webkit-transform: translateX(-15px);
+	}
+	20%, 40%, 60%, 80% {
+	-webkit-transform: translateX(-15px);
+	}
+}
+
 @keyframes shake {
 	0%, 100% {
-	transform: translateX(0);
+	transform: translateX(0px);
 	}
 	10%, 30%, 50%, 70%, 90% {
 	transform: translateX(-15px);
 	}
 	20%, 40%, 60%, 80% {
-	transform: translateX(15px);
+	transform: translateX(-15px);
 	}
+}
+
+.map-frame {
+	border:0;
 }
 
