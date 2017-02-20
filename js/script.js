@@ -1,19 +1,12 @@
 var link = document.querySelector(".btn-lost");
 
 if (link) {
-
 	var popup = document.querySelector(".modal-content");
-
 	var close = popup.querySelector(".modal-content-close");
-
 	var form = popup.querySelector(".login-form");
-
 	var clientName = popup.querySelector(".client-name");
-
 	var email = popup.querySelector(".client-email");
-
 	var letter = popup.querySelector(".client-letter");
-
 	var storage = localStorage.getItem(".client-name");
 
 	link.addEventListener("click", function(event) {
@@ -27,6 +20,7 @@ if (link) {
 			clientName.focus();
 		}
 	});
+
 	close.addEventListener("click", function(event) {
 		event.preventDefault();
 		popup.classList.remove("modal-content-show");
@@ -43,6 +37,7 @@ if (link) {
 			localStorage.setItem(".client-name", clientName.value);
 		}
 	});
+
 	window.addEventListener("keydown", function(event) {
 		if (event.keyCode === 27) {
 			if (popup.classList.contains("modal-content-show")) {
@@ -56,9 +51,7 @@ if (link) {
 var mapOpen = document.querySelector(".js-open-map");
 
 if (mapOpen) {
-
 	var mapPopup = document.querySelector(".modal-content-map");
-
 	var Close = mapPopup.querySelector(".modal-content-close");
 
 	mapOpen.addEventListener("click", function(event) {
@@ -79,14 +72,12 @@ if (mapOpen) {
 		}
 	});
 }
+
 var slideopen = document.querySelector(".slider-next");
 
 if (slideopen) {
-
 	var slideclose = document.querySelector(".slider-prev");
-
 	var slider2show = document.querySelector(".slider-2");
-
 	var slider1hide = document.querySelector(".slider-1");
 
 	slideopen.addEventListener("click", function(event) {
@@ -97,6 +88,7 @@ if (slideopen) {
 			slider2show.classList.add("show-slider");
 		}
 	});
+
 	slideopen.addEventListener("click", function(event) {
 		event.preventDefault();
 		if (slider1hide.classList.contains("slider-1-none")) {
@@ -105,6 +97,7 @@ if (slideopen) {
 			slider1hide.classList.add("slider-1-none");
 		}
 	});
+
 	slideclose.addEventListener("click", function(event) {
 		event.preventDefault();
 		if (slider2show.classList.contains("show-slider")) {
@@ -113,6 +106,7 @@ if (slideopen) {
 			slider2show.classList.add("show-slider");
 		}
 	});
+
 	slideclose.addEventListener("click", function(event) {
 		event.preventDefault();
 		if (slider1hide.classList.contains("slider-1-none")) {
@@ -122,12 +116,11 @@ if (slideopen) {
 		}
 	});
 }
+
 var buy = document.querySelectorAll(".btn-buy-item");
 
 if (buy) {
-
 	var contantCatalog = document.querySelector(".modal-content-catalog");
-
 	var Catalogclose = contantCatalog.querySelector(".modal-content-close");
 
 	for (var i = 0; i < buy.length; i++) {
@@ -140,6 +133,7 @@ if (buy) {
 		event.preventDefault();
 		contantCatalog.classList.remove("modal-content-show");
 	});
+	
 	window.addEventListener("keydown", function(event) {
 		if (event.keyCode === 27) {
 			if (contantCatalog.classList.contains("modal-content-show")) {
