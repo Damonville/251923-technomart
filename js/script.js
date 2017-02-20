@@ -73,14 +73,14 @@ if (mapOpen) {
 	});
 }
 
-var slideopen = document.querySelector(".slider-next");
+var slideOpen = document.querySelector(".slider-next");
 
-if (slideopen) {
-	var slideclose = document.querySelector(".slider-prev");
+if (slideOpen) {
+	var slideClose = document.querySelector(".slider-prev");
 	var slider2show = document.querySelector(".slider-2");
 	var slider1hide = document.querySelector(".slider-1");
 
-	slideopen.addEventListener("click", function(event) {
+	slideOpen.addEventListener("click", function(event) {
 		event.preventDefault();
 	if (slider2show.classList.contains("show-slider")) {
 			slider2show.classList.remove("show-slider");
@@ -89,7 +89,7 @@ if (slideopen) {
 		}
 	});
 
-	slideopen.addEventListener("click", function(event) {
+	slideOpen.addEventListener("click", function(event) {
 		event.preventDefault();
 		if (slider1hide.classList.contains("slider-1-none")) {
 			slider1hide.classList.remove("slider-1-none");
@@ -98,7 +98,7 @@ if (slideopen) {
 		}
 	});
 
-	slideclose.addEventListener("click", function(event) {
+	slideClose.addEventListener("click", function(event) {
 		event.preventDefault();
 		if (slider2show.classList.contains("show-slider")) {
 			slider2show.classList.remove("show-slider");
@@ -107,7 +107,7 @@ if (slideopen) {
 		}
 	});
 
-	slideclose.addEventListener("click", function(event) {
+	slideClose.addEventListener("click", function(event) {
 		event.preventDefault();
 		if (slider1hide.classList.contains("slider-1-none")) {
 			slider1hide.classList.remove("slider-1-none");
@@ -121,7 +121,7 @@ var buy = document.querySelectorAll(".btn-buy-item");
 
 if (buy) {
 	var contantCatalog = document.querySelector(".modal-content-catalog");
-	var Catalogclose = contantCatalog.querySelector(".modal-content-close");
+	var сatalogСlose = contantCatalog.querySelector(".modal-content-close");
 
 	for (var i = 0; i < buy.length; i++) {
 		buy[i].addEventListener("click", function(event) {
@@ -129,7 +129,7 @@ if (buy) {
 			contantCatalog.classList.add("modal-content-show");
 		});
 	}
-	Catalogclose.addEventListener("click", function(event) {
+	сatalogСlose.addEventListener("click", function(event) {
 		event.preventDefault();
 		contantCatalog.classList.remove("modal-content-show");
 	});
